@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table>
+    <tr>
+        <th>Завдання</th>
+        <th></th>
+        <th>Вхідні дані</th>
+        <th>Результат</th>
+    </tr>
+    <tr>
+        <td><strong>Завдання №1. Виведення поточної дати та часу</strong></td>
+        <td><button onclick="currentDate()">Виконати</button></td>
+        <td></td>
+        <td id="currentDateTd"></td>
+    </tr>
+    <tr>
+        <td><strong>Завдання №2. Виведення дня тижня</strong></td>
+        <td><button onclick="dayOfWeek(new Date())">Виконати</button></td>
+        <td></td>
+        <td id="dayOfWeekTd"></td>
+    </tr>
+    <tr>
+        <td><strong>Завдання №3. Виведення дати, яка була N днів назад</strong></td>
+        <td><button onclick="pastDate()">Виконати</button></td>
+        <td><input type="text" id="pastDateInput"/></td>
+        <td id="pastDateTd"></td>
+    </tr>
+    <tr>
+        <td><strong>Завдання №4. Кількість днів вказаного місяця</strong></td>
+        <td><button onclick="lastDayOfMonth()">Виконати</button></td>
+        <td>
+            <p>
+                <label for="ldomYear">Рік:</label>
+                <input type="text" id="ldomYear"/>
+            </p>
+            <p>
+                <label for="ldomMonth">Місяць:</label>
+                <input type="text" id="ldomMonth"/>
+            </p>
+        </td>
+        <td id="lastDayOfMonthTd"></td>
+    </tr>
+    <tr>
+        <td><strong>Завдання №5. Кількість секунд, що пройшло й залишилося</strong></td>
+        <td><button onclick="leftPassedSeconds()">Виконати</button></td>
+        <td></td>
+        <td id="leftPassedSecondsTd"></td>
+    </tr>
+    <tr>
+        <td><strong>Завдання №6. Форматування дати</strong></td>
+        <td><button onclick="formatDate()">Виконати</button></td>
+        <td><input type="date" id="formattingDate"></td>
+        <td id="formatDateTd"></td>
+    </tr>
+    <tr>
+        <td><strong>Завдання №7. Різниця між двома датами</strong></td>
+        <td><button onclick="datesDifference(new Date(), new Date(2020,2,11, 21, 16))">Виконати</button></td>
+        <td>
+            <p>
+                <label for="dateDifference1">Дата 1:</label>
+                <input type="date" id="dateDifference1"/>
+            </p>
+            <p>
+                <label for="dateDifference2">Дата 2:</label>
+                <input type="date" id="dateDifference2"/>
+            </p></td>
+        <td id="datesDifferenceTd"></td>
+    </tr>
+    <tr>
+        <td><strong>Завдання №8. Форматування дати за часом</strong></td>
+        <td><button onclick="formatDateByTime()">Виконати</button></td>
+        <td><input type="date" id="formattingDateByTime"></td>
+        <td id="formatDateByTimeTd"></td>
+    </tr>
+    <tr>
+        <td><strong>Завдання №9. Парсинг дати</strong></td>
+        <td><button onclick="parseDate()">Виконати</button></td>
+        <td><input type="text" id="inputDate"></td>
+        <td id="parseDateTd"></td>
+        <td>Допустимі формати дат:<br>DD.MM.YYYY,<br>DD-MM-YYYY,<br>DD/MM/YYYY</td>
+    </tr>
+    <tr>
+        <td><strong>Завдання №10. Виведення дати на вказаній мові</strong></td>
+        <td><button onclick="outputDateByLanguage()">Виконати</button></td>
+        <td>
+            <select name="chooseLanguage" id="languages">
+                <option value="uk">Українська</option>
+                <option value="ru">Російська</option>
+                <option value="en">Англійська</option>
+            </select>
+        </td>
+        <td id="outputDateByLanguageTd"></td>
+    </tr>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
