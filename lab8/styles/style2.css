@@ -1,0 +1,137 @@
+.Shadow3d {
+	font-size: 40px;
+	border-radius: 15px;
+	margin-left: 120px;
+	padding: 20px;
+    width: 280px;
+    height: 120px;
+    background: linear-gradient(-45deg, #FEE864, #F5965E);
+    color: #8AE3FF;
+    text-shadow: 1px 1px gray, 1.5px 1.5px #7a7a7a, 2px 2px #757575, 2.5px 2.5px #707070, 3px 3px #6b6b6b;
+}
+.block{
+	width: 120px;
+	height: 120px;
+	border-radius: 0 30px;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	top: -180px;
+	left: 300px;
+}
+.block div:nth-child(1){
+	background-color: #8AE3FF;
+	width: 60px;
+	height: 60px;
+}
+.block div:nth-child(2){
+	background-color: white;
+	width: 60px;
+	height: 60px;
+	border-radius: 0 29px 0 0;
+}
+.block div:nth-child(3){
+	background-color: white;
+	width: 60px;
+	height: 60px;
+	border-radius: 0 0 0 29px;
+}
+.block div:nth-child(4){
+	background-color: #8AE3FF;
+	width: 60px;
+	height: 60px;
+}
+
+
+.button span {
+	display: inline-block;
+	margin: 15px;
+	padding: 20px 30px;
+ 	cursor: pointer;
+	border-radius: 25px;
+	color: white;
+	transition: .2s linear;
+}
+.button span:nth-child(1) {
+	background:#4A534D;
+	box-shadow:0 0 5px #313A34, 0 5px #313A34;
+	position: relative;
+  	top: -160px;
+  	left: 0px;
+}
+.button span:nth-child(1):hover {
+  	box-shadow: 0 0 0 2px white, 0 0 0 4px #4A534D;
+  	top: -164px;
+  	left: -4px;
+}
+.button span:nth-child(2) {
+	background:#4A534D;
+	box-shadow:0 0 5px #313A34, 0 -5px #313A34 inset;
+	position: relative;
+  	top: -157.5px;
+  	left: 0;
+	padding: 22.5px 30px;
+}
+.button span:nth-child(2):hover { 
+  	box-shadow: 200px 0 0 0 rgba(255,255,255,.3) inset;
+  	top: -161.5px;
+  	left: -4px;
+}
+.button span:nth-child(3) {
+	background:#4A534D;
+	box-shadow:0 0 5px #313A34, 0 -5px #313A34 inset;
+	position: relative;
+  	top: -157.5px;
+  	left: 0;
+	padding: 22.5px 30px;
+}
+.button span:nth-child(3):hover {
+ 	box-shadow: 0 0 0 2px #4A534D inset, 0 0 0 4px white inset;
+	top: -161.5px;
+  	left: -4px;
+}
+.button span:nth-child(4) {
+  background: #4A534D;
+  box-shadow:0 0 5px #313A34, 0 5px #313A34;
+  position: relative;
+  top: -160px;
+  left: 0;
+
+}
+.button span:nth-child(4):hover {
+  box-shadow: 2px 2px white, 4px 4px #4A534D;
+  top: -164px;
+  left: -4px;
+}
+
+.content {
+	box-shadow: 0 0 14px 2px black;
+	position: relative;
+	top: -140px;
+	font-size: 25px;
+	border-radius: 20px;
+	width: 600px;
+}
+.content > ul > li{
+	list-style-type: none;
+}
+.content > ul > li:before{
+	content: '✔';
+	position: relative;
+	left: -30px;
+}
+.content ul > li:first-child{
+	border-radius: 0 20px 0 0;
+}
+.content ul > li:last-child{
+	border-radius: 0 0 20px 0;
+}
+.content > ul > li:nth-child(odd){
+	background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+}
+.content > ul > li:nth-child(even){
+	background: linear-gradient(45deg, #C995D3, #F6EFD2);
+}
+.content > ul > li{
+	text-shadow: -1px 0 1px white, 0 -1px 1px white, 0 1px 1px white, 1px 0 1px white, 0 0 8px white, 0 0 8px white, 0 0 8px white, 2px 2px 3px black;
+}

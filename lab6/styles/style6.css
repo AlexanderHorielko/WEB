@@ -1,0 +1,20 @@
+p > label{
+	padding-left: 150px;
+}
+fieldset{
+	border: 1px solid black;
+	width: 500px;
+	background-color: #D3D598;
+}
+legend{
+	font: bold 14pt serif;
+	color: #C74949;
+}
+p > button{
+	margin-left: 150px;
+}
+.submit{
+	background-color: #BD7F60;
+	color: white;
+	border: 1px solid white;
+}

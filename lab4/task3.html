@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form oninput="pounds.value = weight.value * 2.2;
+				   centner.value = weight.value / 100">
+		<fieldset>
+			<label for="weight">Введите ваш вес в кг:</label>
+			<input type="number" name="weight" min="0"><br>
+
+			<label for="pounds">Ваш вес в фунтах:</label>
+			<output name="pounds">0</output><br>
+
+			<label for="centner">Ваш вес в центнерах:</label>
+			<output name="centner">0</output>
+		</fieldset>
+	</form>
+
+	<form oninput="
+		if (num1.value && num2.value) 
+			sum.value = parseInt(num1.value) + parseInt(num2.value)
+		else
+			sum.value = 0;
+	">
+		<fieldset>
+			<h1>Введи 2 числа получи сумму</h1>
+			<input type="number" name="num1">
+			+ 
+			<input type="number" name="num2">
+			<strong>=</strong>
+			<output name="sum"><strong>0</strong></output>
+		</fieldset>
+	</form>
+
+	<form>
+		<fieldset oninput="result.value = parseInt(nums.value)">
+			<h1>Сколько вы хотите заработать?</h1>
+			0<input type="range" name="nums" min="0" max="100" step="1">100 <br>
+			<output name="result" style="color: blue">0</output>
+		</fieldset>
+	</form>
+
+	<form oninput="
+		if (hours.value && money.value && charge.value)
+			result.value = (parseInt(hours.value) * parseFloat(money.value) * parseFloat(charge.value)) + (parseInt(hours.value) * parseFloat(money.value))
+		else
+			result.value = 0;
+	">
+		<fieldset>
+			<legend>Расчитай ЗП</legend>
+			
+			<p>
+			<label for="hours">Количество часов</label>
+			<input type="number" name="hours" min="0">
+			</p>
+			
+			<p>
+			<label for="money">Ставка</label>
+			<input type="number" name="money" min="0">
+			</p>
+			
+			<p>
+			<label for="charge">Налог</label>
+			<input type="number" name="charge" min="0">
+			</p>
+
+			<p>
+			<label for="result">Зарплата всего</label>
+			<output name="result"><strong>0</strong></output> грн
+			</p>
+		</fieldset>
+	</form>
+	<p align="right">
+		<a href="index.html">Повернутися до змісту</a>
+	</p>
+</body>
+</html>

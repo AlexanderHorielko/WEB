@@ -1,0 +1,42 @@
+svg {
+  border: 1px solid #dddddd;
+}
+td{
+  height: 500px;
+  text-align: center;
+}
+.thirdLine{
+  stroke: gold;
+  stroke-width: 10;
+  stroke-linejoin:bevel;
+}
+.secondLine{
+  stroke: lightseagreen;
+  stroke-width: 50;
+  stroke-linecap:round;
+  stroke-linejoin:round
+}
+.firstLine{
+  stroke: teal;
+  stroke-width: 80;
+  stroke-linecap:square;
+  stroke-linejoin:butt;
+}
+.firstDash{
+  fill :none;
+  stroke-dasharray: 15;
+  stroke: tomato;
+  stroke-width:150
+}
+.secondDash{
+  fill:none;
+  stroke-dasharray: 10;
+  stroke: darkorange;
+  stroke-width:125
+}
+.thirdDash{
+  fill:gold;
+  stroke-dasharray: 15 10;
+  stroke: gold;
+  stroke-width:75
+}

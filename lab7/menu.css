@@ -1,0 +1,19 @@
+.nav > li{
+	border: 2px solid #B0C7D8;
+	border-radius: 5px;
+	display: inline-block;
+	margin:10px;
+	padding: 10px;
+}
+.nav a{
+	text-decoration: none;
+}
+.nav > li > a{
+	color: #877160;
+}
+.nav > li:hover{
+	background-color: #607788;
+}
+.nav > li:hover > a{
+	color:white;
+}

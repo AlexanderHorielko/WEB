@@ -1,0 +1,28 @@
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+ol > li{
+  margin-bottom: 5px;
+}
+
+li::before {
+  counter-increment: section;       
+  content: counters(section,".") " ";
+  border: 2px solid yellow;
+  color: yellow;
+  background-color: green;
+  padding-left: 5px;
+}
+
+body > ol > li::before{
+  padding-left: 10px;
+  padding-right: 7px; 
+}
+
+li:hover::before {
+  border: 2px solid blue;
+  background-color: yellow;
+  color: blue;
+
+}

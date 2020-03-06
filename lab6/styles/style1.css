@@ -1,0 +1,28 @@
+p{
+	color: green;
+	text-align:center;
+}
+.first{
+	color: red;
+}
+#second{
+	color: purple;	
+}
+a{
+	color: red;
+}
+ul a{
+	color: purple;		
+}
+ul .higherMenu{
+	color: green;
+}
+ul .lowerMenu{
+	list-style-type:none;	
+}
+.lastList > li > a{
+	text-decoration: none;
+}
+.lastList > li{
+	list-style-type: square;
+}

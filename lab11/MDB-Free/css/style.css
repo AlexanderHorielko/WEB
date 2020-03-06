@@ -1,0 +1,22 @@
+html,body,header,#intro{
+	height:100%;
+}
+#intro{
+	background: url("../img/overlays/background.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+.top-nav-collapse{
+	background-color: #24355c;
+}
+@media(max-width:768px){
+	.navbar:not(.top-nav-collapse){
+		background-color: #24355c;
+	}
+}
+.dropdown-menu{
+	background-color: #24355c;
+	border: 1px solid white;
+}
+hr.deep-purple{
+	width: 60px;
+}

@@ -1,0 +1,74 @@
+header img{
+	float: left;
+	width: 60px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+header h1{
+	padding: 10px;
+}
+.firstMan div:first-child img{
+	width: 200px;
+}
+.firstMan div:first-child p{
+	margin-top: -10px;
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 50px;
+	font-size: 14px;
+}
+.firstMan div:first-child{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin-bottom: 50px;
+}
+.firstMan blockquote{
+	width:inherit;
+}
+blockquote > div{
+	text-align: right;
+}
+.firstMan div + div{
+	background: url("images/graduates3.png") no-repeat,
+	url("images/graduates3.png") no-repeat 100% 100%;
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 100px;
+	padding-left: 20px;
+	width:370px;
+}
+
+
+
+.secondMan div:first-child img{
+	width: 200px;
+}
+.secondMan div:first-child p{
+	margin-top: -10px;
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 50px;
+	font-size: 14px;
+}
+.secondMan div:first-child{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin-bottom: 50px;
+}
+.secondMan blockquote{
+	width:inherit;
+}
+blockquote > div{
+	text-align: right;
+}
+.secondMan div + div{
+	background: url("images/graduates3.png") no-repeat,
+	url("images/graduates3.png") no-repeat 100% 100%;
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 100px;
+	padding-left: 20px;
+	width:370px;
+}

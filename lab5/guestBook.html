@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title></title>
+</head>
+<body>
+
+	<form>
+		<fieldset>
+			<legend>Контактная информация</legend>
+			<table>
+				<tr>
+					<td><label for="name">Имя</label></td>
+					<td><input class="sameStyle" type="text" name="name" autofocus required placeholder="Введите имя..."></td>
+				</tr>
+				<tr>
+					<td><label for="phone">Телефон</label></td>
+					<td><input class="sameStyle" type="tel" name="phone" pattern="^(?:380(?:9[3,5-9]|6[3,6-8]|50|73)\d{7})$" required placeholder="Введите телефон..."></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email</label></td>
+					<td><input class="sameStyle" type="email" name="email" autocomplete="off" required placeholder="Введите email..."></td>
+				</tr> 
+				<tr>
+					<td><label for="date">Дата посещения</label></td>
+					<td><input class="sameStyle" type="datetime" name="date" pattern="^(?:0[1-9]|[1-2]\d|3[0-1])(?:.|-)(?:0[1-9]|1[0-2])(?:.|-)(?:19\d{2}|20(?:0\d|1[0-9]))" required placeholder="Введите дату..."></td>
+				</tr>
+				<tr>
+					<td><label for="url">Url вашей страницы в вк</label></td>
+					<td><input class="sameStyle" type="url" name="date" required placeholder="Введите url..."></td>
+				</tr>
+			</table>
+		</fieldset>
+
+
+
+		<fieldset>
+			<legend>Персольная информация</legend>
+			<table>
+				<tr>
+					<td><label for="age">Возраст</label></td>
+					<td><input class="sameStyle" type="number" name="age" min="1" max="100" step="1" placeholder="Введите возраст..."></td>
+				</tr>
+
+				<tr>
+					<td><label for="cuisine">Любимая кухня</label></td>
+					<td>
+						<select>
+							<option>Русская</option>
+							<option>Украинская</option>
+							<option>Испанская</option>
+							<option>Мексиканская</option>
+							<option>Итальянская</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="dish">Ваше любимое блюдо?</label></td>
+					<td>
+						<input class="sameStyle" list="dish" placeholder="Введите блюдо...">
+						<datalist id="dish">
+							<option value="Пица"></option>
+							<option value="Сушы"></option>
+							<option value="Бургер"></option>
+						</datalist>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="dishes">Какие блюда Вы хотели бы увидеть в меню?</label></td>
+					<td><textarea spellcheck="off" placeholder="Впишите блюда..."></textarea></td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>Оценка нашего заведения</legend>
+
+			<p>
+				<strong>Почему вы выбрали наше заведение?</strong>
+			</p>
+
+			<p>
+				<label>
+					<input type="radio" name="why">
+					Недалеко от дома/работы
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="radio" name="why">
+					Увидел рекламу
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="radio" name="why">
+					Посоветовали				
+				</label>
+			</p>
+			<p>	
+				<label>
+					<input type="radio" name="why">
+					Оптимальное соотношение цены и качества
+				</label>
+			</p>
+
+			<p>
+				<strong>Вы будете советовать наше заведение знакомым?</strong>
+			</p>
+			<p>	
+				<label>
+					<input type="radio" name="Y/N">
+					Да
+				</label>
+			</p>
+			<p>	
+				<label>
+					<input type="radio" name="Y/N">
+					Нет
+				</label>
+			</p>
+
+			<p>
+				<label for="percents">На сколько процентов вы оцениваете наше заведение?</label><br>
+					0
+				<input oninput="result.value = parseInt(percents.value)" type="range" name="percents" min="1" max="100" step="1">
+					100<br>
+				<output name="result">0</output>%
+			</p>
+		</fieldset>
+		<p>
+			<button type="submit">Отправить</button>
+		</p>
+
+		<!-- <progress max="100"> -->
+		<meter min="0" max="100" low="25" high="75" optimum="50" value="45">0</meter>
+	</form>
+	<a href="index.html">На головну</a>
+</body>
+</html>

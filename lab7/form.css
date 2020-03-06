@@ -1,0 +1,48 @@
+td:first-child{
+	text-align: right;
+	font-size: 16px;
+	font-weight: bold;
+}
+td:last-child{
+	width: 300px;
+}
+table{
+	border: 3px solid #B7B7B7;
+	background-color: #EEEEEE;
+	padding: 10px;
+	padding-right:20px;
+}
+input[type=text]{
+	background-color: #FDFFB2;
+	border: 2px solid #ADB215;
+	height:30px;
+	width: inherit;
+}
+input[type=password]{
+	background-color: #FDC2EC;
+	border: 2px solid #BA1B8D;
+	height:30px;
+	width: inherit;
+}
+select{
+	background-color: #BDB8F9;
+	border: 2px solid #2B20A1;
+	height:40px;
+	width: 303px;
+}
+textarea{
+	background-color: #C6FFC5;
+	border: 2px solid #189117;
+	height:100px;
+	width: 295px;
+}
+button:nth-child(odd){
+	background-color:#A2FF9A;
+}
+button:nth-child(even){
+	background-color:#F78C92;
+}
+button{
+	font-weight: bold;
+	letter-spacing: -0.05em;
+}

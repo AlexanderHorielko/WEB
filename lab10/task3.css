@@ -1,0 +1,35 @@
+
+.navigation{
+  background: #2696E8;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  font-size: 20px;
+}
+
+.wrapper{
+  display: flex;
+  background-color: #2696e8;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-basis: 1000px;
+}
+.wrapper > div {
+  color: white;
+  display: flex;
+  padding:10px;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 250px;
+}
+
+.wrapper div:hover {
+  color: #2696E8;
+	background-color: white;
+	cursor: pointer;
+  transition: .2s;
+}
+
+*{
+    box-sizing: border-box;
+}

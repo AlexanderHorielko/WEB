@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("images/0.png") no-repeat;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+body > div:nth-child(1)
+{
+  	width: auto;
+  	position: fixed;
+ 	left:990px;
+  	top:350px;
+}
+body > div:nth-child(2)
+{
+	width: auto;
+  	position: fixed;
+ 	left:780px;
+  	top:368px;
+}
+body > div:nth-child(3)
+{
+	width: auto;
+  	position: fixed;
+ 	left:915px;
+  	top:567px;
+}
+body > div:nth-child(4)
+{
+	width: auto;
+  	position: fixed;
+ 	left:240px;
+  	top:170px;
+}
+body > div:nth-child(5)
+{
+	width: auto;
+  	position: fixed;
+ 	left:280px;
+  	top:295px;
+}
+div:nth-child(6)
+{
+  width: auto;
+  position: fixed;
+  left:0px;
+  top:556px;
+}

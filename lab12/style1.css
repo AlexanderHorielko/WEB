@@ -1,0 +1,329 @@
+div{
+  margin-bottom: 10px;
+}
+#d1{ 
+   background: white;
+   border: 1px solid red;
+   
+   width: 30%;
+   height: 100px;
+   
+  transition: background 1s ease-out;
+}
+#d1:hover {
+	background: red;
+}
+
+
+#d2{
+   background: white;
+   border: 1px solid red;
+   color: red;
+   
+   width: 30%;
+   height: 100px;
+   
+    transition: all 1s ease-out;
+}
+#d2:hover { 
+	color: white; background: red;
+}
+
+
+#d3{
+   background: white;
+   border: 1px solid red;
+   color: red;
+   
+   width: 30%;
+   height: 50px;
+   
+   transition: width 1s ease-out;
+}
+#d3:hover { 
+	width: 100%;
+}
+
+
+#d4{
+   background: white;
+   border: 1px solid red;
+   color: red;
+   
+   width: 30%;
+   height: 50px;
+   
+   font-size: 15px;
+   
+   transition: width 1s ease-out, font-size 1s ease-out;
+}
+#d4:hover{ 
+	width: 100%; font-size: 25px;
+}
+
+
+#d5{
+   background: white;
+   border: 1px solid red;
+   color: red;
+   
+   width: 30%;
+   height: 50px;
+   
+   transition: width 1s ease-out 0.2s,  margin-left 1s ease-out 0.2s;
+ }
+#d5:hover { 
+	width: 70%; margin-left: 10%;
+}
+
+#d6{
+   
+   background: white;
+   border: 1px solid red;
+   color: black;
+   
+   width: 30%;
+   height: 50px;
+   
+   text-indent: 2000px;
+   line-height: 50px;
+   text-align: center;
+   
+   transition: text-indent 1s linear;
+   white-space: nowrap;
+}
+
+#d6:hover { 
+	color: black; text-indent: 0px; 
+}
+
+#d7 {
+    border: 1px solid red;
+  width: 30%;
+  height: 50px;
+    color: #000;
+    
+  
+  transition: width 3s linear 3s;
+}
+#d7:hover {
+   width: 100%;
+}
+
+input{
+  width: 30%;
+  height: 30px;
+  padding: 0px 5px;
+  margin: 10px;
+  transition: all 1s ease-out;
+ }
+input:focus{ 
+  width: 50%; box-shadow: 0px 0px 2px blue; color: blue; outline: none;
+}
+
+
+.test div{
+  background: white;
+  border: 1px solid red;
+   
+  width: 30%;
+  height: 30px;
+   
+  margin-bottom: 40px;
+  transition: all 1s ease-out;
+}
+.test div:last-child{
+  margin-bottom: 0;
+}
+
+.test{
+  padding: 40px 5%;
+  border: 1px solid green;
+}
+.test:hover div{ 
+  width: 100%;
+}
+
+.boxes>div{
+  border: 1px solid black;
+  padding: 10px 0;
+}
+.box1 > div{
+  background: white;
+  border: 1px solid red;
+   
+  width: 30%;
+  height: 30px;
+   
+  margin: 0px 0px 20px 20px;
+   
+  transition: all 1s ease-out;
+}
+.box1 > div:last-child{
+  margin-bottom: 0;
+}
+
+.box1 > div:hover  + div{
+  width: 70%;
+}
+
+
+.box2 > div{
+  background: white;
+  border: 1px solid red;
+   
+  width: 30%;
+  height: 30px;
+   
+  margin: 0px 0px 20px 20px;
+   
+  transition: all 1s ease-out;
+}
+.box2 > div:last-child{
+  margin-bottom: 0;
+}
+
+.box2 > div:hover ~ div{ 
+  width: 70%;
+}
+
+
+
+.box3 > div{
+  background: white;
+  border: 1px solid red;
+   
+  width: 30%;
+  height: 30px;
+   
+  margin: 0px 0px 20px 20px;
+   
+  transition: all 1s ease-out;
+}
+.box3 > div:last-child{
+  margin-bottom: 0;
+}
+
+.box3 > div:hover  + div + div{ 
+  width: 70%;
+}
+
+.show{
+   background: white;
+   border: 1px solid red;
+   
+   padding: 10px;
+}
+
+.hint{
+  background: #FF5B5B;
+  
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+  
+  margin: 20px 0px 0px -400px;
+    padding: 10px;
+  
+  text-align: center;
+  color: white;
+    
+  transition: all 1s ease-out;
+}
+
+.show:hover  + .hint{   
+  margin-left: 30%;
+}
+
+
+#div1{
+    border: 1px solid red;
+  width: 30%;
+  height: 50px;
+    color: #000;
+  
+  transition: width 3s steps(5, start);
+}
+#div2{
+    border: 1px solid red;
+  width: 30%;
+  height: 50px;
+    color: #000;
+  margin-top: 20px;
+  
+  transition: width 3s steps(5, end);
+}
+#go:hover div{
+    width: 100%;
+}
+
+#div {
+  border: 1px solid red;
+  width: 30%;
+  height: 50px;
+  color: #000;
+ 
+  transition: width 3s cubic-bezier(.20,-0.4,0,.81);
+}
+#div:hover {
+    width: 100%;
+}
+
+
+#wrapper{
+  padding:0;
+  width: 50%;
+  height: 30px;
+  border: 1px solid red;
+}
+#test{
+  background: red;
+  width: 0%;
+  height: 30px;
+
+  transition: all 2s linear;
+
+ }
+#wrapper:hover div{ 
+  width: 100%; 
+}
+
+
+#wrapper1{
+  padding: 0;
+  width: 50%;
+  height: 30px;
+  border: 1px solid red;
+}
+#test1{
+  background: red;
+  width: 0%;
+  height: 30px;
+
+  transition: all 4s steps(5, start);
+
+ }
+#wrapper1:hover div{ 
+  width: 100%; 
+}
+
+
+#test2{
+  background: white;
+  border: 1px solid red;
+  
+  width: 150px;
+  height: 50px;
+  margin: 200px auto;
+  
+  transition: all 1s linear;
+  
+  box-shadow: -100px 100px black, 100px -100px black;
+  
+}
+ 
+#test2:hover { 
+  box-shadow: 100px 100px black, 100px 100px black; 
+}
+
+

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<style type="text/css">
+	table{
+	    border-collapse: collapse;
+	}
+	.table2 td{
+	    text-align: left;
+	}
+	.table6 td{
+	    padding-left: 20px;
+	    border: 2px solid darkseagreen;
+	}
+</style>
+	<!-- Таблица 2 -->
+	<div>
+	<table border="1" cellpadding="10">
+		<caption>Продукция</caption>
+		<colgroup>
+    		<col span="2" style="background:Khaki">
+   			<col style="background-color:LightCyan">
+   			<col style="background-color:#FF7D3C">
+  		</colgroup>
+			<tr>
+				<th>№п/п</th>
+				<th>Наименование</th>
+				<th>Цена, руб.</th>
+				<th>Количество, шт.</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Карандаш цветной</td>
+				<td>20,00</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Линейка 20см</td>
+				<td>30,00</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Ластик</td>
+				<td>10,00</td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Корректор</td>
+				<td>40,00</td>
+				<td>10</td>
+			</tr>
+	</table>
+	</div>
+	<hr>
+	
+
+	<!-- Таблица 3 -->
+
+	<table border="1" cellpadding="15" width="500">
+		<caption>Адрес</caption>
+		<colgroup>
+			<col width="30"  style="background-color: #6297FF">
+			<col width="100" style="background-color: #CECECE">
+			<col width="80"  style="background-color: #CECECE">
+			<col width="70"  style="background-color: #CECECE">
+		</colgroup>
+		<thead style="background-color: orange">
+			<tr>
+				<th>№</th>
+				<th>ПІБ</th>
+				<th>Адреса</th>
+				<th>Телефон</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr align="center">
+				<td>1</td>
+				<td>ПІБ1</td>
+				<td>Адреса1</td>
+				<td>111111</td>
+			</tr>
+			<tr align="center">
+				<td>2</td>
+				<td>ПІБ2</td>
+				<td>Адреса2</td>
+				<td>222222</td>
+			</tr>
+			<tr align="center">
+				<td>3</td>
+				<td>ПІБ3</td>
+				<td>Адреса3</td>
+				<td>333333</td>
+			</tr>
+			<tr align="center">
+				<td>4</td>
+				<td>ПІБ4</td>
+				<td>Адреса4</td>
+				<td>444444</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr style="background-color: green">
+				<th colspan="3" align="right">Загальна кількість</th>
+				<th>4</th>
+			</tr>
+		</tfoot>
+	</table>
+	<hr>
+	
+
+	<!-- Таблица 4 -->
+
+	<table border="1" style="text-align: center;">
+		<tr>
+			<th rowspan="2" width="100">номер</th>
+			<th colspan="2" width="250">тег</th>
+		</tr>
+		<tr>
+			<th width="50">тег</th>
+			<th width="200">значение</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>p</td>
+			<td rowspan="4">для текста</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>a</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>b</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>i</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>table</td>
+			<td>таблица</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>tr</td>
+			<td>ряд таблицы</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>td</td>
+			<td rowspan="2">ячейка таблицы</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>th</td>
+		</tr>
+	</table>
+	<hr>
+
+
+	<!-- Таблица 5 -->
+	<table style="border-color: #B72525" border="2" cellpadding="5" >
+		<caption>Меню</caption>
+		<thead bgcolor = "#5A41FF">
+			<tr height = 50>
+				<td colspan="5" style="color: #E1931F"><font size="5">ШАПКА</font></td>
+			</tr>
+		</thead>
+		<tbody>
+		<tr height = 30 bgcolor="#FFF7BA">
+			<td>МЕНЮ</td>
+			<td>МЕНЮ</td>
+			<td>МЕНЮ</td>
+			<td>МЕНЮ</td>
+			<td>МЕНЮ</td>
+		</tr>
+		<tr height = 200>
+			<td colspan="2" bgcolor="#5A41FF"><font size="4" color="white">новости</font></td>
+			<td colspan="3" bgcolor="#FFF7BA" style="vertical-align: top">КОНТЕНТ</td>
+		</tr>
+		</tbody>
+	</table><hr>
+
+	<!-- Таблица 6 -->
+	<table class="table6">
+		<tr height = 60>
+			<td width="200" style="background-color: #075216; font-size: large; color: #D9E100">ШАПКА</td>
+			<td rowspan="2" align="center" width="150" style="background-color: #E2E912" ><span style="margin-left: -20px;">МЕНЮ</span></td>
+		</tr>
+		<tr height = 180>
+			<td style="background-color: #DBDBDB;"><span style="padding-top: 30px;">КОНТЕНТ</span></td>
+		</tr>
+		<tr height = "25">
+			<td colspan="2" style="background-color: #075216; color: #D9E100;font-size: small"><span style="margin: -10px">НИЗ САЙТА</span></td>
+		</tr>
+	</table><hr>
+
+	<!-- Таблица 7 -->
+	<table style="border-collapse: unset" border="1">
+		<tr>
+			<td colspan="2">ячейка 1</td>
+			<td>ячейка 3</td>
+		</tr>
+		<tr>
+			<td rowspan="2">ячейка 4</td>
+			<td>ячейка 5</td>
+			<td>ячейка 6</td>
+		</tr>
+		<tr>
+			<td>ячейка 8</td>
+			<td>ячейка 9</td>
+		</tr>
+	</table><hr>
+
+	<!-- Таблица 8 -->
+	<table style="border-collapse: unset" border="1">
+		<tr>
+			<td colspan="3">ячейка 1</td>
+		</tr>
+		<tr>
+			<td>ячейка 4</td>
+			<td rowspan="2">ячейка 5</td>
+			<td>ячейка 6</td>
+		</tr>
+		<tr>
+			<td>ячейка 8</td>
+			<td>ячейка 9</td>
+		</tr>
+	</table><hr>
+
+	<!-- Таблица 9 -->
+	<table style="border-collapse: unset" border="1">
+		<tr>
+			<td rowspan="3">ячейка 1</td>
+			<td>ячейка 2</td>
+			<td rowspan="3">ячейка 3</td>
+		</tr>
+		<tr>
+			<td>ячейка 5</td>
+		</tr>
+		<tr>
+			<td>ячейка 8</td>
+		</tr>
+	</table><hr>
+
+	
+
+	<!-- Таблица 10 -->
+	<table style="border-collapse: unset" border="1" width="300">
+		<tr>
+			<td rowspan="3" colspan="2">1<img src="https://images-na.ssl-images-amazon.com/images/I/61KaItCzYyL._SX425_.jpg" width="70" border="1"></td>
+			<td colspan="2">2<img src="https://cdn3.vectorstock.com/i/1000x1000/16/62/cute-bee-cartoon-vector-1471662.jpg" width="70" border="1"></td>
+			<td>3<img src="https://s1.dmcdn.net/v/BP5GQ1Ly0qowoG_5j/x1080" width="70" border="1"></td>
+		</tr>
+		<tr>
+			<td colspan="3">4</td>
+		</tr>
+		<tr>
+			<td rowspan="3">5</td>
+			<td>6</td>
+			<td>7</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td rowspan="2">9</td>
+			<td rowspan="2" colspan="2">10</td>
+		</tr>
+		<tr>
+			<td>11</td>
+		</tr>
+	</table><hr>
+
+	<!-- Таблица 11 -->
+	<table style="border-color: #B72525" border="3" cellpadding="5" >
+		<caption>Меню</caption>
+		<tr height = 50>
+			<td rowspan="3" bgcolor="#3C0177"style="padding: 10px;"><font size="4" color="white">новости</font></td>
+			<td bgcolor="#9952DF" width="200" style="padding: 10px"><font size="5">ШАПКА</font></td>
+		</tr>
+		<tr height = 30 bgcolor="#E6CAF3">
+			<td style="padding: 10px">МЕНЮ</td>
+		</tr>
+		<tr height = 200 >
+			<td class="try" bgcolor="#F3E1C7" style="padding: 10px; vertical-align: top">КОНТЕНТ</td>
+		</tr>
+	</table><hr>
+</body>
+</html>

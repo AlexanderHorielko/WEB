@@ -1,0 +1,18 @@
+td{
+	width: 200px
+}
+textarea{
+	width: 200px
+}
+fieldset{
+	width: 500px;
+	border-color: #45A9A6;
+	border-style: solid;
+	background-color: #FFF18D
+}
+legend{
+	color: #45A9A6
+}
+input.sameStyle{
+	width: 200px
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<table>
+		<form action="form.html" method="GET">
+			<tr>
+				<td><label>E-mail:</label></td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			
+			<tr>
+				<td><label>Пароль:</label></td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td><label>Пароль еще раз:</label></td>
+				<td><input type="password" name="repeatPassword"></td>
+			</tr>
+			<tr>
+				<td><label>Имя:</label></td>
+				<td><input type="text" name="firstName"></td>
+			</tr>
+			<tr>
+				<td><label>Фамилия:</label></td>
+				<td><input type="text" name="lastName"></td>
+			</tr>
+			<tr>
+			<td><label>Пол:</label></td>
+				<td>
+					<label>
+						<input type="radio" name="gender" checked>
+						чоловік
+					</label>
+					<label>
+						<input type="radio" name="gender">
+						жінка
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Город:</label></td>
+					<td>
+					<select>
+						<option>Житомир</option>
+						<option>Київ</option>
+						<option>Львів</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><label>О себе:</label></td>
+				<td><textarea></textarea></td>
+			</tr>
+			
+			<tr>
+				<td><label>Соглашения:</label></td>
+				<td>
+					<label>
+						<input type="checkbox" name="agreements" checked>
+						Получать рассылки сайту
+					</label><br>
+					<label>
+						<input type="checkbox" name="agreements">
+						Соглашаюсь с правилами сайта
+					</label><br>
+					<label>
+						<input type="checkbox" name="agreements">
+						Скрыть профиль на сайте
+					</label><br>
+					
+				</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>
+					<button>Зарегистрироваться</button>
+					<button>Сброс</button>
+				</td>
+			</tr>
+
+		</form>
+	</table>
+</body>
+</html>

@@ -1,0 +1,257 @@
+body > div{
+	margin-bottom: 10px;
+}
+
+@keyframes anim{
+	from{margin-left:3px;}
+	to{margin-left:500px;}
+}
+#d1{
+	animation:anim 4s 3;
+}
+#d1{ 
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+}
+
+@keyframes anim1{
+	from{margin-left:3px;}
+	to{margin-left:500px;}
+}
+#d2{
+	animation: anim1 4s infinite;
+}
+#d2{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+}
+
+@keyframes anim2{
+	from{background: white}
+	to{background: red}
+}
+#d3{
+	animation:anim2 4s 30 0s;
+}
+#d3{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+.wrap1{
+	border:1px solid black;
+	height: 355px;
+}
+.wrap2{
+	border:1px solid black;
+	height: 255px;
+}
+
+@keyframes anim3{
+	0%{margin-left: 0%; margin-top: 0%;}
+	25%{margin-left: 50%; margin-top: 0%;}
+	50%{margin-left: 50%; margin-top: 20%;}
+	75%{margin-left: 0%; margin-top: 20%;}
+	100%{margin-left: 0%; margin-top: 0%;}
+}
+
+#d4{
+	animation: anim3 8s linear 30;
+}
+#d4{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+}
+
+
+@keyframes anim4_1{
+	0%{margin-left:0px; margin-top: 0px}
+	25%{margin-left:500px; margin-top: 0px}
+	50%{margin-left:500px; margin-top: 200px}
+	75%{margin-left:0px; margin-top: 200px}
+	100%{margin-left:0px; margin-top: 0px}
+}
+@keyframes anim4_2{
+	0%{background: white;}
+	50%{background: red;}
+	100%{background: white;}
+}
+
+#d5{
+	animation: anim4_1 8s linear infinite, anim4_2 2s linear infinite;
+}
+#d5{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+}
+
+
+@keyframes anim5{
+	0%{margin-left: 0%;}
+	50%{margin-left: 50%;}
+	100%{margin-left: 0%;}
+}
+
+#d6{
+	animation: anim5 4s infinite;
+}
+#d6{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+}
+
+
+@keyframes anim6{
+	from{margin-left: 0%;}
+	to{margin-left: 50%;}
+}
+
+#d7{
+	animation: anim6 2s infinite alternate;
+}
+#d7{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+}
+
+
+@keyframes anim7{
+	0%{width: 0%;}
+	100%{width: 100%;}
+}
+
+#wrap3{
+	margin: 0px auto;
+	width: 50%;
+	height: 30px;
+	border: 1px solid red;
+
+}
+#d8{
+	background: red;
+	width: 0%;
+	height: 30px;
+	
+	animation:anim7 5s linear 1 forwards;
+}
+
+
+@keyframes anim8{
+	0%{width: 0%;}
+	100%{width: 100%;}
+}
+
+#wrap4{
+	margin: 0px auto;
+	width: 50%;
+	height: 30px;
+	border: 1px solid red;
+
+}
+#d9{
+	background: red;
+	width: 0%;
+	height: 30px;
+	
+	animation: anim8 16s linear infinite -8s;
+}
+
+
+@keyframes anim9{
+	from{width: 10%;}
+	to{width: 100%;}
+}
+
+#d10{
+	animation: anim9 2s ease infinite alternate;
+	animation-play-state: paused;
+}
+#d10:hover{
+	animation-play-state: running;
+}
+
+#d10{
+    height: 50px;
+    border: 1px solid red;
+}
+
+
+@keyframes anim10{
+	from{width: 10%;}
+	to{width: 100%;}
+}
+
+#anim{
+	width: 50px;
+	animation: anim10 2s ease alternate infinite;
+	animation-play-state: paused;
+}
+#hoverme:hover + #anim{
+	animation-play-state: running;
+}
+#hoverme{
+    padding: 10px;
+    border: 1px solid red;
+    margin-bottom: 30px;
+	width: 30%;
+}
+#anim{
+    height: 50px;
+    border: 1px solid blue;
+}
+
+
+
+@keyframes bouncing{
+	40%, 70%, 90%{
+		animation-timing-function: ease-out;
+		bottom: 0;
+	}
+	0%{
+		bottom: 200px;
+		left: 0;
+		animation-timing-function: ease-in;
+	}
+	55%{
+		bottom: 50px;
+		animation-timing-function: ease-in;
+	}
+	80%{
+		bottom: 25px;
+		animation-timing-function: ease-in;
+	}
+	95%{
+		bottom: 10px;
+		animation-timing-function: ease-in;
+	}
+	100%{
+		left: 110px;
+		bottom: 0;
+		animation-timing-function: ease-out;
+	}
+}
+
+
+#wrap5{
+	margin: 0px auto;
+	width: 220px;
+	height: 220px;
+	border: 1px solid red;
+	position: relative;
+}
+#ball{
+	background: red;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	position: absolute;
+	
+	animation: bouncing 5s infinite;
+}

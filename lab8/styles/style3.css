@@ -1,0 +1,73 @@
+body{
+  background: linear-gradient(-45deg, #FC76B3, #FACD68);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 150px;	
+}
+header > div:first-child{
+	font-size: 44px;
+	border-radius: 25px;
+	margin-left: 415px;
+	padding: 20px 0 30px 0;
+  width: 280px;
+  background: linear-gradient(-45deg, #C165DD, #5C27FE);
+  color: #00f7a7;
+  text-shadow: 1px 1px gray, 1.5px 1.5px #7a7a7a, 2px 2px #757575, 2.5px 2.5px #707070, 3px 3px #6b6b6b, 3.5px 3.5px #656565, 4px 4px #606060;
+	text-align: center;
+}
+
+.button span {
+  display: inline-block;
+  margin: 20px 0 20px 0;
+  padding: 20px 30px;
+  cursor: pointer;
+  border-radius: 15px;
+  color: black;
+  font-style: italic;
+  font-size: 20px;
+  transition: .2s linear;
+
+  background: #B588F7;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.button span:hover {
+  	box-shadow: 2px 2px white, 4px 4px #B588F7;
+  	top: -4px;
+  	left: -4px;
+}
+.button span:first-child{
+	margin-left: 160px;
+	margin-right: 200px;
+}
+.button span:last-child{
+	margin-left: 210px;
+}
+.inline{
+	display: inline-block;
+	padding: 20px;
+	border-radius: 10px;
+	width: 250px;
+	height: 350px;
+	vertical-align: top;
+	background: radial-gradient(60% 80%, #FAECD5, #CAE4D8);
+	text-shadow: -1px 0 1px white, 0 -1px 1px white, 0 1px 1px white, 1px 0 1px white, 0 0 8px white, 0 0 8px white, 0 0 8px white, 2px 2px 3px black;
+
+  	transition: .2s linear;
+  	position: relative;
+  	top: 0;
+  	left: 0;
+}
+.inline:hover {
+  	box-shadow: 2px 2px white, 4px 4px grey;
+  	top: -4px;
+  	left: -4px;
+}
+.aboutMe{
+	margin-left: 80px;
+	margin-right: 35px;
+}
+.hobby{
+	margin-right: 35px;
+}

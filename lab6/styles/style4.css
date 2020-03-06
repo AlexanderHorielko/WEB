@@ -1,0 +1,45 @@
+.picture{
+	height: 500px;
+	width: 385px;
+}
+.form {
+	display:inline-block;
+	position:relative;
+}
+.form > .text {
+	display:inline-block;
+	position:absolute;
+	top:5px;
+	left:5px;
+	padding: 10px;
+	margin-right: 10px;
+	border-top: 3px solid blue;
+	border-bottom: 3px solid green;
+	border-right: 3px solid yellow;
+	border-left: 3px solid red;
+	border-style: ridge;
+}
+.text > h1{
+	color: red;
+	margin-left: -10px;
+	margin-top: -10px;
+	margin-right: -10px;
+}
+.text > em{
+	margin-left: -10px;
+	color: white;
+}
+.list{
+	color: yellow;
+}
+.notes{
+	color: blue;
+	margin-left: -10px;
+}
+.porridge{
+	display:inline-block;
+	position:absolute;
+	top:330px;
+	left:15px;
+	width: 200px;
+}
